@@ -1,4 +1,5 @@
 # Java LLM Extractor
+[![Build Extractor Binaries](https://github.com/avm-sistemas/java-llm-extractor/actions/workflows/build.yml/badge.svg)](https://github.com/avm-sistemas/java-llm-extractor/actions/workflows/build.yml)
 
 A pragmatic utility designed to crawl through a JSF/Java legacy application and consolidate its menu architecture into a structured, LLM-ready Markdown document.
 
