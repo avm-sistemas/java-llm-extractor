@@ -100,6 +100,11 @@ The tool expects a standard Maven multi-module layout:
 
 Source files are read in **ISO-8859-1** (Latin-1), which is the encoding standard. The output file is written in the same encoding by default. Use `--utf8` to produce a UTF-8 output when sending the document to external LLM APIs or web-based tools.
 
+## Artifacts:
+
+  - [Binaries](https://github.com/avm-sistemas/java-llm-extractor/actions/runs/25896296004/artifacts/7008733037)
+
+
 ## Author
 
 Andre Mesquita
