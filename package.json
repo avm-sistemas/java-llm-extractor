@@ -1,0 +1,42 @@
+{
+  "name": "java-llm-extractor",
+  "version": "1.0.0",
+  "description": "Extract Java JSF application menu architecture to LLM-friendly Markdown.",
+  "keywords": [
+    "menu-architecture",
+    "llm",
+    "extractor",
+    "jsf",
+    "java",
+    "logistics"
+  ],
+  "license": "MIT",
+  "author": "Andre Mesquita",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "pkg": {
+    "assets": [
+      "dist/**/*"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64"
+    ]
+  },
+  "scripts": {
+    "start": "node ./index.ts",
+    "dev": "tsx --watch index.ts",
+    "build": "tsc index.ts --outDir dist --esModuleInterop --skipLibCheck --target ES2018 --module CommonJS --types node && pkg . --targets node18-win-x64,node18-linux-x64 --out-path bin",
+    "sample": "npx tsx index.ts 'C:\\Projetos\\LogOne\\LogOne-2.0-master2.4' 'menu-architecture.md'"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "pkg": "^5.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.0.0"
+  }
+}
